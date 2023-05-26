@@ -16,71 +16,29 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@components": [
-        "src/components"
-      ],
-      "@modules/*": [
-        "src/modules/*"
-      ],
-      "@modules": [
-        "src/modules"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@styles": [
-        "src/styles"
-      ],
-      "@public/*": [
-        "public/*"
-      ],
-      "@public": [
-        "public"
-      ],
-      "@constants/*": [
-        "src/constants/*"
-      ],
-      "@constants": [
-        "src/constants"
-      ],
-      "@images/*": [
-        "src/images/*"
-      ],
-      "@images": [
-        "src/images"
-      ],
-      "@redux/*": [
-        "src/redux/*"
-      ],
-      "@redux": [
-        "src/redux"
-      ],
-      "@i18n": [
-        "./i18n"
-      ],
-      "@apiFiles/*": [
-        "src/apiFiles/*"
-      ],
-      "@apiFiles": [
-        "src/apiFiles"
-      ],
-      "@test/*": [
-        "test/*"
-      ],
-      "@test": [
-        "test"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ],
-      "@utils": [
-        "utils"
-      ]
-    },
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+      "@modules/*": ["src/modules/*"],
+      "@modules": ["src/modules"],
+      "@styles/*": ["src/styles/*"],
+      "@styles": ["src/styles"],
+      "@public/*": ["public/*"],
+      "@public": ["public"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants"],
+      "@images/*": ["src/images/*"],
+      "@images": ["src/images"],
+      "@redux/*": ["src/redux/*"],
+      "@redux": ["src/redux"],
+      "@i18n": ["./i18n"],
+      "@apiFiles/*": ["src/apiFiles/*"],
+      "@apiFiles": ["src/apiFiles"],
+      "@test/*": ["test/*"],
+      "@test": ["test"],
+      "@utils/*": ["utils/*"],
+      "@utils": ["utils"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.json"],
+  "exclude": ["node_modules", "test/*", "cypress/*"]
 }
