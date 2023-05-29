@@ -1,13 +1,17 @@
 import { Provider } from "react-redux";
+import { StyledThemeProvider } from "@styles/theme";
 import type { AppProps } from "next/app";
-import "src/styles/global.css";
 import store from "@redux/store";
+import GlobalStyle from "@styles/globalStyles";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />;
-    </Provider>
+    <StyledThemeProvider>
+      <Provider store={store}>
+        <GlobalStyle />
+        <Component {...pageProps} />;
+      </Provider>
+    </StyledThemeProvider>
   );
 }
 
